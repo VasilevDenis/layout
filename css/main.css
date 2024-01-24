@@ -208,13 +208,40 @@ body {
 
 aside {
     width: 23%;
-    border: solid;
 }
 
 .aside-title {
     font-size: 0.65rem;
     font-weight: bold;
-    text-align: center;
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
+    text-align: center;
+}
+
+.new-post-title {
+    font-size: 0.65rem;
+    font-weight: bold;
+    font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+}
+
+.date-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+}
+
+.new-post-article {
+    display: flex;
+    gap: 6%;
+}
+
+.new-post-image {
+    max-width: 3.4rem;
+}
+
+.new-post-section {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
