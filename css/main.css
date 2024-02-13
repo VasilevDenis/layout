@@ -1,11 +1,17 @@
 @font-face {
-    font-family: 'OpenSans', sans-serif;
+    font-family: 'OpenSans';
     src: url('../fonts/OpenSans-Regular.woff2') format('woff2'),
          url('../fonts/OpenSans-Regular.woff') format('woff'),
-         url('../fonts/OpenSans-Regular.ttf') format('ttf'),
-         url('../fonts/OpenSans-Bold.woff2') format('woff2'),
+         url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'OpenSans';
+    src: url('../fonts/OpenSans-Bold.woff2') format('woff2'),
          url('../fonts/OpenSans-Bold.woff') format('woff'),
-         url('../fonts/OpenSans-Bold.ttf') format('ttf');
+         url('../fonts/OpenSans-Bold.ttf') format('truetype');
+    font-weight: bold;
 }
 
 body {
@@ -21,7 +27,6 @@ body {
 }
 
 .main-header {
-    text-align: center;
     background: 
         linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
         url("../images/banner-bg.jpg");
@@ -59,16 +64,6 @@ body {
 .menu a {
     text-decoration: none;
     color: white;
-}
-
-.main-h1 {
-    text-transform: uppercase;
-    color: white;
-    font-size: 2.8rem;
-    line-height: 4.5rem;
-    font-family: 'OpenSans', sans-serif;
-    font-weight: bold;
-    margin-top: 5.5rem;
 }
 
 .trends-articles {
@@ -140,16 +135,6 @@ body {
     font-weight: bold;
 }
 
-.trends-h2 {
-    text-transform: uppercase;
-    text-align: center;
-    font-size: 1.4rem;
-    margin-top: 3.7rem;
-    margin-bottom: 0.6rem;
-    font-size: 1.2rem;
-    font-family: 'OpenSans', sans-serif;
-}
-
 .line {
     border-top: 0.2rem solid;
     margin-left: auto;
@@ -159,11 +144,13 @@ body {
     border: solid #e1d9bd;
 }
 
-.central-container {
+.main-container {
     display: flex;
     justify-content: space-between;
     width: 1200px;
     margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
 }
 
 .article-image {
@@ -196,13 +183,6 @@ body {
     gap: 3%;
 }
 
-.trend-header {
-    font-size: 1rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    margin-bottom: 1rem;
-}
-
 .main-article-text {
     font-size: 0.7rem;
     line-height: 1rem;
@@ -212,8 +192,29 @@ aside {
     width: 23%;
 }
 
-.aside-title {
-    font-size: 0.65rem;
+h1 {
+    text-transform: uppercase;
+    color: white;
+    font-size: 4.5rem;
+    line-height: 7.5rem;
+    font-family: 'OpenSans-Bold', sans-serif;
+    margin-top: 3rem;
+    margin-bottom: 6rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    line-height: 2.4rem;
+    font-weight: bold;
+    font-family: 'OpenSans', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.4rem;
+    line-height: 2.915rem;
     font-weight: bold;
     font-family: 'OpenSans', sans-serif;
     text-transform: uppercase;
@@ -248,15 +249,64 @@ aside {
     gap: 1rem;
 }
 
-#pics {
-    text-align: center;
-    background-color: #f4f7f6;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-}
-
 #copyright {
     text-align: center;
     padding-top: 2rem;
     padding-bottom: 2rem;
+}
+
+h2::after, h3::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 3.3rem;
+    background: #e1d9bd;
+    border-left: 1px solid ece6d5;
+    border-right: 1px solid ece6d5;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    display: flex;
+    width: 1200px;
+    margin: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    flex-direction: column;
+}
+
+.pics {
+    display: flex;
+    gap: 1rem;
+    background-color: #f4f7f6;
+    width: 100%;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.copyright {
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+input {
+    flex: 1;
+    padding: 8px;
+    background-color: #f4f7f6;
+    border: none;
+}
+
+.svg-container {
+    background-color: #b59f5b;
 }
