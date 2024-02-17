@@ -13,27 +13,34 @@
 <body>
     <div class="body-container">
         <header class="main-header">
-            <nav class="menu">
-                <a href="#" class="menu__logo-link">
-                    <img src="svg/noemi-logo.svg" alt="noemi-logo">
-                </a>
-                <ul>
-                <li><a href="#">Главная</a></li>
-                <li><a href="#">Посты</a></li>
-                <li><a href="#">Статьи</a></li>
-                <li><a href="#">Тэги</a></li>
-                <li><a href="#">Темы</a></li>
-                <li><a href="#">Контакты</a></li>
-                </ul>
-            </nav>
-            <h1>
-                Блог о творчестве, спорте,<br> и образе жизни
-            </h1>
+            <div class="main-header-container">
+                <div class="main-header-logo-menu-container">
+                    <nav class="menu">
+                        <a href="#" class="menu__logo-link">
+                            <img src="svg/noemi-logo.svg" alt="noemi-logo">
+                        </a>
+                        <ul>
+                        <li><a href="#">Главная</a></li>
+                        <li><a href="#">Посты</a></li>
+                        <li><a href="#">Статьи</a></li>
+                        <li><a href="#">Тэги</a></li>
+                        <li><a href="#">Темы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="main_h1-container">
+                    <h1>
+                        Блог о творчестве, спорте,<br> и образе жизни
+                    </h1>
+                </div>
+            </div>
         </header>
         <section class="trends">
             <h2>
                 Сейчас в тренде
             </h2>
+            <hr class="hr-main">
             <div class="trends-articles">
                 <article class="trend">
                     <img
@@ -50,7 +57,9 @@
                             </div>
                         </div>
                         <div class="trend-text-block">
-                            Сейчас в тренде: сад на подоконнике
+                            <h2 class="left-text">
+                                Сейчас в тренде: сад на подоконнике
+                            </h2>
                         </div>
                     </div>
                 </article>
@@ -66,7 +75,9 @@
                             </div>
                         </div>
                         <div class="trend-text-block">
-                            Сыры на красивых картинках из интернета: какие они на вкус
+                            <h2 class="left-text">
+                                Сыры на красивых картинках из интернета: какие они на вкус
+                            </h2>
                         </div>
                     </div>
                 </article>
@@ -85,7 +96,9 @@
                             </div>
                         </div>
                         <div class="trend-text-block">
-                            Собираемся в первый поход в горы
+                            <h2 class="left-text">
+                                Собираемся в первый поход в горы
+                            </h2>
                         </div>
                     </div>
                 </article>
@@ -104,265 +117,397 @@
                             </div>
                         </div>
                         <div class="trend-text-block">
-                            Сейчас в тренде: сколько витамина в лимонах?
+                            <h2 class="left-text">
+                                Сейчас в тренде: сколько витамина в лимонах?
+                            </h2>
                         </div>
                     </div>
                 </article>
             </div>
         </section>
         <div class="main-container">
-            <main class="main">
-                <article class="main-article">
-                    <img
-                    class="article-image"
-                    src="images/last-post1.jpg"
-                    alt="Plants"/>
-                    <div class="article-text-block">
-                        <div class="article-tags-container">
-                            <div class="tag">
-                                Travel
+            <div class="main-aside-container">
+                <main class="main">
+                    <article class="main-article">
+                        <img
+                        class="article-image"
+                        src="images/last-post1.jpg"
+                        alt="Plants"/>
+                        <div class="article-text-block">
+                            <div class="article-tags-container">
+                                <div class="tag">
+                                    Travel
+                                </div>
+                                <div class="tag">
+                                    Health
+                                </div>
                             </div>
-                            <div class="tag">
-                                Health
+                            <h2 class="trend-h2">
+                                10 мест, ради которых стоит проснуться на рассвете
+                            </h2>
+                            <div class="date-author-container">
+                                <div class="date">
+                                    10 июня 2019
+                                </div>
+                                <div class="author">
+                                    Неизвестный автор
+                                </div>
                             </div>
+                            <p class="article-text">
+                                Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушёл, 
+                                запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
+                            </p>
                         </div>
-                        <h2 class="trend-h2">
-                            10 мест, ради которых стоит проснуться на рассвете
-                        </h2>
-                        <div class="date-author-container">
-                            <div class="date">
-                                10 июня 2019
+                    </article>
+                    <article class="main-article">
+                        <img
+                        class="article-image"
+                        src="images/last-post2.jpg"
+                        alt="Plants"/>
+                        <div class="article-text-block">
+                            <div class="article-tags-container">
+                                <div class="tag">
+                                    Health
+                                </div>
+                                <div class="tag">
+                                    Lifestyle
+                                </div>
                             </div>
-                            <div class="author">
-                                Неизвестный автор
+                            <h2 class="left-text">
+                                Йога для начинающих в домашних условиях
+                            </h2>
+                            <div class="date-author-container">
+                                <div class="date">
+                                    10 июня 2019
+                                </div>
+                                <div class="author">
+                                    Неизвестный автор
+                                </div>
                             </div>
+                            <p class="article-text">
+                                Расскажем, какие упражнения выбрать и как сделать коврик для занятия йогой
+                                из того, что можно найти в шкафу.
+                            </p>
                         </div>
-                        <p class="main-article-text">
-                            Итак, вы в Питере. Раннее утро. Лед с рек и каналов уже ушёл, 
-                            запущены фонтаны города... Музеи еще закрыты. Что посмотреть?
-                        </p>
+                    </article>
+                    <article class="main-article">
+                        <img
+                        class="article-image"
+                        src="images/last-post3.jpg"
+                        alt="Plants"/>
+                        <div class="article-text-block">
+                            <div class="tag-container">
+                                <div class="tag">
+                                    Music
+                                </div>
+                            </div>
+                            <h2 class="left-text">
+                                Лучшие музыкальные фестивали этого лета
+                            </h2>
+                            <div class="date-author-container">
+                                <div class="date">
+                                    10 июня 2019
+                                </div>
+                                <div class="author">
+                                    Неизвестный автор
+                                </div>
+                            </div>
+                            <p class="article-text">
+                                Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
+                                Мы составили список летних фестивалей по всему миру.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="main-article">
+                        <img
+                        class="article-image"
+                        src="images/last-post4.jpg"
+                        alt="Plants"/>
+                        <div class="article-text-block">
+                            <div class="tag-container">
+                                <div class="tag">
+                                    Lifestyle
+                                </div>
+                                <div class="tag">
+                                    Interior
+                                </div>
+                                <div class="tag">
+                                    Art
+                                </div>
+                            </div>
+                            <h2 class="trend-h2">
+                                Делаем модные принты на подушках для интерьера
+                            </h2>
+                            <div class="date-author-container">
+                                <div class="date">
+                                    10 июня 2019
+                                </div>
+                                <div class="author">
+                                    Неизвестный автор
+                                </div>
+                            </div>
+                            <p class="article-text">
+                                Подушки для дивана целесообразнее заказать в съёмных чехлах на молнии, если потребуется
+                                чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
+                            </p>
+                        </div>
+                    </article>
+                    <article class="main-article">
+                        <img
+                        class="article-image"
+                        src="images/last-post5.jpg"
+                        alt="Plants"/>
+                        <div class="article-text-block">
+                            <div class="tag-container">
+                                <div class="tag">
+                                    Lifestyle
+                                </div>
+                                <div class="tag">
+                                    Food
+                                </div>
+                            </div>
+                            <h2 class="left-text">
+                                Наукоёмкий подход к кулинарии
+                            </h2>
+                            <div class="date-author-container">
+                                <div class="date">
+                                    10 июня 2019
+                                </div>
+                                <div class="author">
+                                    Неизвестный автор
+                                </div>
+                            </div>
+                            <p class="article-text">
+                                Узнаем основы проектирования новых пищевых и около-пищевых опытов.
+                                Вскроем физику, химию и микробиологию еды.
+                            </p>
+                        </div>
+                    </article>
+                </main>
+                <aside>
+                    <div class="aside-block">
+                        <h3>
+                            Новые посты
+                        </h3>
+                        <hr class="hr-main">
+                        <article class="new-post-article">
+                            <img
+                            width="70"
+                            height="70"
+                            class="new-post-image"
+                            src="images/2.jpg"
+                            alt="Plants"/>
+                            <div class="date-title-container">
+                                <div class="date">
+                                    <time datetime="2019-06-14">
+                                        14 июня 2019
+                                    </time>
+                                </div>
+                                <h3 class="left-text">
+                                    10 мест, ради которых стоит проснуться
+                                </h3>
+                            </div>
+                        </article>
+                        <article class="new-post-article">
+                            <img
+                            width="70"
+                            height="70"
+                            class="new-post-image"
+                            src="images/151.jpg"
+                            alt="Plants"/>
+                            <div class="date-title-container">
+                                <div class="date">
+                                    <time datetime="2019-06-14">
+                                        14 июня 2019
+                                    </time>
+                                </div>
+                                <h3 class="left-text">
+                                    Йога для домашних
+                                </h3>
+                            </div>
+                        </article>
+                        <article class="new-post-article">
+                            <img
+                            width="70"
+                            height="70"
+                            class="new-post-image"
+                            src="images/45.jpg"
+                            alt="Plants"/>
+                            <div class="date-title-container">
+                                <div class="date">
+                                    <time datetime="2019-06-14">
+                                        14 июня 2019
+                                    </time>
+                                </div>
+                                <h3 class="left-text">
+                                    Как мы превратили классное место в балкон
+                                </h3>
+                            </div>
+                        </article>
+                        <article class="new-post-article">
+                            <img
+                            width="70"
+                            height="70"
+                            class="new-post-image"
+                            src="images/501.jpg"
+                            alt="Plants"/>
+                            <div class="date-title-container">
+                                <div class="date">
+                                    <time datetime="2019-06-14">
+                                        14 июня 2019
+                                    </time>
+                                </div>
+                                <h3 class="left-text">
+                                    Кулинарный подход к науке
+                                </h3>
+                            </div>
+                        </article>
+                        <article class="new-post-article">
+                            <img
+                            width="70"
+                            height="70"
+                            class="new-post-image"
+                            src="images/7.jpg"
+                            alt="Plants"/>
+                            <div class="date-title-container">
+                                <div class="date">
+                                    <time datetime="2019-06-14">
+                                        14 июня 2019
+                                    </time>
+                                </div>
+                                <h3 class="left-text">
+                                    Лучшие прически для распущенных полос
+                                </h3>
+                            </div>
+                        </article>
                     </div>
-                </article>
-                <article class="main-article">
-                    <img
-                    class="article-image"
-                    src="images/last-post2.jpg"
-                    alt="Plants"/>
-                    <div class="article-text-block">
-                        <div class="article-tags-container">
-                            <div class="tag">
-                                Health
-                            </div>
-                            <div class="tag">
-                                Lifestyle
+                    <div class="aside-block">
+                        <div class="search-container">
+                            <input class="search-input" type="text" placeholder="Найти...">
+                            <div class="svg-container">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="4.5rem" height="4.5rem">
+                                    <image class="search-image" href="svg/search.svg" width="1.7rem" height="1.7rem"/>
+                                </svg>
                             </div>
                         </div>
-                        <h2 class="trend-h2">
-                            Йога для начинающих в домашних условиях
-                        </h2>
-                        <div class="date-author-container">
-                            <div class="date">
-                                10 июня 2019
-                            </div>
-                            <div class="author">
-                                Неизвестный автор
-                            </div>
-                        </div>
-                        <p class="main-article-text">
-                            Расскажем, какие упражнения выбрать и как сделать коврик для занятия йогой
-                            из того, что можно найти в шкафу.
-                        </p>
                     </div>
-                </article>
-                <article class="main-article">
-                    <img
-                    class="article-image"
-                    src="images/last-post3.jpg"
-                    alt="Plants"/>
-                    <div class="article-text-block">
+                    <div class="aside-block">
+                        <h3>Рассылка</h3>
+                        <hr class="hr-main">
+                        <input class="subscribe-input" type="text" placeholder="Ваш email адрес">
+                        <button class="subscribe-button" type="submit">
+                            <div class="subscribe-text">
+                                <a href="#">Подписаться</a>
+                            </div>
+                        </button>
+                    </div>
+                    <div class="aside-block">
+                        <h3>Тэги</h3>
+                        <hr class="hr-main">
                         <div class="tag-container">
-                            <div class="tag">
-                                Music
+                            <div class="aside-tag">
+                                <a href="#">Fasion</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Music</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Lifestyle</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Art</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Interior</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Travel</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Food</a>
+                            </div>
+                            <div class="aside-tag">
+                                <a href="#">Health</a>
                             </div>
                         </div>
-                        <h2 class="trend-h2">
-                            Лучшие музыкальные фестивали этого лета
-                        </h2>
-                        <div class="date-author-container">
-                            <div class="date">
-                                10 июня 2019
-                            </div>
-                            <div class="author">
-                                Неизвестный автор
-                            </div>
-                        </div>
-                        <p class="main-article-text">
-                            Лето на носу, а с ним и музыкальные фестивали. На каком же из них вы разобьёте свою палатку?
-                            Мы составили список летних фестивалей по всему миру.
-                        </p>
                     </div>
-                </article>
-                <article class="main-article">
-                    <img
-                    class="article-image"
-                    src="images/last-post4.jpg"
-                    alt="Plants"/>
-                    <div class="article-text-block">
-                        <div class="tag-container">
-                            <div class="tag">
-                                Lifestyle
-                            </div>
-                            <div class="tag">
-                                Interior
-                            </div>
-                            <div class="tag">
-                                Art
-                            </div>
+                    <div class="aside-block">
+                        <h3>Темы</h3>
+                        <hr class="hr-main">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Красота</a> <span class="upper-text">12</span>
                         </div>
-                        <h2 class="trend-h2">
-                            Делаем модные принты на подушках для интерьера
-                        </h2>
-                        <div class="date-author-container">
-                            <div class="date">
-                                10 июня 2019
-                            </div>
-                            <div class="author">
-                                Неизвестный автор
-                            </div>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Здровье</a> <span class="upper-text">12</span>
                         </div>
-                        <p class="main-article-text">
-                            Подушки для дивана целесообразнее заказать в съёмных чехлах на молнии, если потребуется
-                            чистка подушек, проще снять чехлы, чем везти подушку в химчистку.
-                        </p>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Образ жизни</a> <span class="upper-text">12</span>
+                        </div>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Музыка</a> <span class="upper-text">12</span>
+                        </div>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Красота</a> <span class="upper-text">12</span>
+                        </div>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Спорт</a> <span class="upper-text">12</span>
+                        </div>
+                        <hr class="hr-theme">
+                        <div class="theme-container">
+                            <a href="#" class="theme">Йога</a> <span class="upper-text">12</span>
+                        </div>
+                        <hr class="hr-theme">
                     </div>
-                </article>
-                <article class="main-article">
-                    <img
-                    class="article-image"
-                    src="images/last-post5.jpg"
-                    alt="Plants"/>
-                    <div class="article-text-block">
-                        <div class="tag-container">
-                            <div class="tag">
-                                Lifestyle
+                </aside>
+            </div>
+            <section class="stuff-container">
+                <h2>Наши изделия</h2>
+                <hr class="hr-main">
+                <div class="stuff-cards-container">
+                    <div class="stuff-card-container">
+                        <div class="stuff-card">
+                            <div class="stuff-image-container">
+                                <img
+                            class="stuff-image"
+                            src="images/shop-item-desk1.jpg"
+                            alt="Pillow"/>
                             </div>
-                            <div class="tag">
-                                Food
-                            </div>
-                        </div>
-                        <h2 class="trend-h2">
-                            Наукоёмкий подход к кулинарии
-                        </h2>
-                        <div class="date-author-container">
-                            <div class="date">
-                                10 июня 2019
-                            </div>
-                            <div class="author">
-                                Неизвестный автор
+                            <div class="stuff-text-container">
+                                <h2 class="left-text">Подушки на диван</h2>
+                                <p class="article-text">
+                                    Набор двух подушек с модными принтами. Видео о создании <a class="stuff-link" href="#">здесь</a>
+                                </p>
                             </div>
                         </div>
-                        <p class="main-article-text">
-                            Узнаем основы проектирования новых пищевых и около-пищевых опытов.
-                            Вскроем физику, химию и микробиологию еды.
-                        </p>
-                    </div>
-                </article>
-            </main>
-            <aside>
-                <section class="new-post-section">
-                    <h3>
-                        Новые посты
-                    </h3>
-                    <article class="new-post-article">
-                        <img
-                        class="new-post-image"
-                        src="images/2.jpg"
-                        alt="Plants"/>
-                        <div class="date-title-container">
-                            <div class="date">
-                                <time datetime="2019-06-14">
-                                    14 июня 2019
-                                </time>
-                            </div>
-                            <header class="new-post-title">
-                                10 мест, ради которых стоит проснуться
-                            </header>
+                        <div class="stuff-card">
+                            <img
+                            class="stuff-image"
+                            src="images/shop-item-desk2.jpg"
+                            alt="Pillow"/>
+                            <h2 class="left-text">Кукла "Зайчик"</h2>
+                            <p class="article-text">
+                                Интерьерная рукодельная кукла "Зайчик", созданию которой посвящена <a class="stuff-link" href="#">весенняя серия постов</a>
+                            </p>
                         </div>
-                    </article>
-                    <article class="new-post-article">
-                        <img
-                        class="new-post-image"
-                        src="images/151.jpg"
-                        alt="Plants"/>
-                        <div class="date-title-container">
-                            <div class="date">
-                                <time datetime="2019-06-14">
-                                    14 июня 2019
-                                </time>
-                            </div>
-                            <header class="new-post-title">
-                                Йога для домашних
-                            </header>
+                        <div class="stuff-card">
+                            <img
+                            class="stuff-image"
+                            src="images/shop-item-desk3.jpg"
+                            alt="Pillow"/>
+                            <h2 class="left-text">Шестиугольная рамка</h2>
+                            <p class="article-text">
+                                Необычная рамка для украшения дома из видео <a class="stuff-link" href="#">"Как сделать рамку из подручных средств за 30 минут"</a>
+                            </p>
                         </div>
-                    </article>
-                    <article class="new-post-article">
-                        <img
-                        class="new-post-image"
-                        src="images/45.jpg"
-                        alt="Plants"/>
-                        <div class="date-title-container">
-                            <div class="date">
-                                <time datetime="2019-06-14">
-                                    14 июня 2019
-                                </time>
-                            </div>
-                            <header class="new-post-title">
-                                Как мы превратили классное место в балкон
-                            </header>
-                        </div>
-                    </article>
-                    <article class="new-post-article">
-                        <img
-                        class="new-post-image"
-                        src="images/501.jpg"
-                        alt="Plants"/>
-                        <div class="date-title-container">
-                            <div class="date">
-                                <time datetime="2019-06-14">
-                                    14 июня 2019
-                                </time>
-                            </div>
-                            <header class="new-post-title">
-                                Кулинарный подход к науке
-                            </header>
-                        </div>
-                    </article>
-                    <article class="new-post-article">
-                        <img
-                        class="new-post-image"
-                        src="images/7.jpg"
-                        alt="Plants"/>
-                        <div class="date-title-container">
-                            <div class="date">
-                                <time datetime="2019-06-14">
-                                    14 июня 2019
-                                </time>
-                            </div>
-                            <header class="new-post-title">
-                                Лучшие прически для распущенных полос
-                            </header>
-                        </div>
-                    </article>
-                </section>
-                <div class="search-container">
-                    <input type="text" placeholder="Search...">
-                    <div class="svg-container">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="4.7rem" height="4.7rem">
-                            <image href="svg/search.svg" width="4.7rem" height="4.7rem"/>
-                        </svg>
-                    </div>
+
+
                 </div>
-            </aside>
+            </section>
         </div>
         <footer>
             <div class="pics">
