@@ -456,7 +456,21 @@ a {
     margin-top: 19rem;
     padding-left: 2rem;
     padding-right: 2rem;
+    padding-top: 2.4rem;
+    padding-bottom: 2.4rem;
     border-width: 0.3rem;
     border: solid #b59f5b;
     height: 100%;
+}
+
+.price-button-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-button {
+    width: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+    margin-right: 0;
 }
