@@ -421,22 +421,28 @@ a {
 
 .stuff-cards-container {
     display: flex;
-    width: 100%;
-}
-
-.stuff-card-container {
-    display: flex;
-    width: 100%;
     justify-content: space-between;
-    align-items: flex-start;
-    padding-left: 2.3rem;
-    padding-right: 2.3rem;
+    width: 100%;
 }
 
 .stuff-card {
-    margin: auto;
-    border: solid;
+    display: flex;
+    flex-direction: column;
     width: 34.6rem;
+    background-repeat: no-repeat;
+    background-position-x: center;
+}
+
+.first-image {
+    background-image: url("../images/shop-item-desk1.jpg");
+}
+
+.second-image {
+    background-image: url("../images/shop-item-desk2.jpg");
+}
+
+.third-image {
+    background-image: url("../images/shop-item-desk3.jpg");
 }
 
 .stuff-link {
@@ -444,24 +450,11 @@ a {
     color: #776a41;
 }
 
-.stuff-image {
-    margin: auto;
-    position: absolute;
-    }
-
-.stuff-image-container {
-    display: flex;
-    background-color: green;
-    position: relative;
-}
-
 .stuff-text-container {
-    position: relative;
-    z-index: 1;
-    align-self: flex-start;
-    padding-top: 17rem;
+    margin-top: 19rem;
     padding-left: 2rem;
     padding-right: 2rem;
-    border-color: #776a41;
     border-width: 0.3rem;
+    border: solid #b59f5b;
+    height: 100%;
 }
